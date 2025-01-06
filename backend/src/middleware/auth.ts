@@ -45,7 +45,7 @@ export const auth = async (
       return;
     }
 
-    req.user = verifiedToken.id;
+    req.userId = verifiedToken.id;
     req.token = token;
     next();
   } catch (e) {
